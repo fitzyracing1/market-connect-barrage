@@ -1,0 +1,45 @@
+# Market Connect
+
+> A Base44 idea-submission and market-connection app. Ideas sit in pending, approved, or rejected.
+
+## Purpose
+Explain Market Connect as a door where a person sends an idea and waits for a status. Source: fitzyracing1/market-connect.
+
+## How it works (plain English)
+1. Submit an idea.
+2. The idea starts as pending.
+3. Someone marks it approved or rejected.
+4. Status is visible to the sender.
+
+## Key ideas
+- Idea submission (send a thought in)
+- Status (pending, approved, rejected)
+- Market connection (link the idea to a market door)
+
+## The actual code
+```
+# source: fitzyracing1/market-connect
+submit_idea()
+status = pending
+if review_ok: status = approved
+else: status = rejected
+```
+
+## Line-by-line translation
+1. submit_idea() → “send the idea in”
+2. status = pending → “it waits”
+3. approved / rejected → “the review result”
+
+## Decisions the program makes
+- If no review yet → stay pending
+- If review says yes → approved
+- If review says no → rejected
+
+## What a person would notice
+A three-state inbox for ideas.
+
+## Current status
+Barrage clone.
+
+## Next possible steps
+Open fitzyracing1/market-connect and submit one idea in the app.
